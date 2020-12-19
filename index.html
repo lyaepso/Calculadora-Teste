@@ -4,10 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Teste</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+        h1 {
+            border-width: 30px;
+            border-color: blue;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        
-    </div>
+   <h1>Calculadora Versão 1.0</h1>
+    <p>Selecione um número abaixo:</p>
+    <button id="0a">0</button>
+    <button id="1a">1</button>
+    <button id="2a">2</button>
+    <button id="3a">3</button>
+    <button id="4a">4</button>
+    <button id="5a">5</button>
+    <button id="6a">6</button>
+    <button id="7a">7</button>
+    <button id="8a">8</button>
+    <button id="9a">9</button>
+    <br>
+    <br>
+    <p>Selecione outro número abaixo:</p>
+    <button id="0b">0</button>
+    <button id="1b">1</button>
+    <button id="2b">2</button>
+    <button id="3b">3</button>
+    <button id="4b">4</button>
+    <button id="5b">5</button>
+    <button id="6b">6</button>
+    <button id="7b">7</button>
+    <button id="8b">8</button>
+    <button id="9b">9</button>
+    <br>
+    <br>
+    <button id="calcula">Calcular</button>
+    <p>A soma desses dois números é:</p>
+    <p id="soma"></p>
+   
+   <script>
+     var valora=0
+     var valorb=0
+     
+     document.getElementById("0a").addEventListener('click', salvar0a)
+       function salvar0a() {
+           valora=0
+       }
+       document.getElementById("0b").addEventListener('click', salvar0b)
+       function salvar0b() {
+           valorb=0
+       }
+       document.getElementById("1a").addEventListener('click', salvar1a)
+       function salvar1a() {
+           valora=1
+       }
+       document.getElementById("1b").addEventListener('click', salvar1b)
+       function salvar1b() {
+           valorb=1
+       }
+       document.getElementById("2a").addEventListener('click', salvar2a)
+       function salvar2a() {
+           valora=2
+       }
+       document.getElementById("2b").addEventListener('click', salvar2b)
+       function salvar2b() {
+           valorb=2
+       }
+       document.getElementById("3a").addEventListener('click', salvar3a)
+       function salvar3a() {
+           valora=3
+       }
+       document.getElementById("3b").addEventListener('click', salvar3b)
+       function salvar3b() {
+           valorb=3
+       }
+       document.getElementById("4a").addEventListener('click', salvar4a)
+       function salvar4a() {
+           valora=4
+       }
+       document.getElementById("4b").addEventListener('click', salvar4b)
+       function salvar4b() {
+           valorb=4
+       }
+       document.getElementById("5a").addEventListener('click', salvar5a)
+       function salvar5a() {
+           valora=5
+       }
+       document.getElementById("5b").addEventListener('click', salvar5b)
+       function salvar5b() {
+           valorb=5
+       }
+       document.getElementById("6a").addEventListener('click', salvar6a)
+       function salvar6a() {
+           valora=6
+       }
+       document.getElementById("6b").addEventListener('click', salvar6b)
+       function salvar6b() {
+           valorb=6
+       }
+       document.getElementById("7a").addEventListener('click', salvar7a)
+       function salvar7a() {
+           valora=7
+       }
+       document.getElementById("7b").addEventListener('click', salvar7b)
+       function salvar7b() {
+           valorb=7
+       }
+       document.getElementById("8a").addEventListener('click', salvar8a)
+       function salvar8a() {
+           valora=8
+       }
+       document.getElementById("8b").addEventListener('click', salvar8b)
+       function salvar8b() {
+           valorb=8
+       }
+       document.getElementById("9a").addEventListener('click', salvar9a)
+       function salvar9a() {
+           valora=9
+       }
+       document.getElementById("9b").addEventListener('click', salvar9b)
+       function salvar9b() {
+           valorb=9
+       }
+       document.getElementById("calcula").addEventListener('click', calcular)
+       function calcular() {
+        document.getElementById("soma").innerText=valora+valorb
+       }
+    </script>
+    
 </body>
 </html>
