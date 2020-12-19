@@ -9,8 +9,14 @@
             background-color: aqua;
         }
         h1 {
-            border-width: 30px;
-            border-color: blue;
+            border: 5px solid blue;
+            border-radius: 30px;
+            text-align: center;
+        }
+        button {
+            border-radius: 5px;
+        }
+
         }
     </style>
 </head>
@@ -42,9 +48,11 @@
     <button id="9b">9</button>
     <br>
     <br>
-    <button id="calcula">Calcular</button>
-    <p>A soma desses dois números é:</p>
-    <p id="soma"></p>
+    <button id="soma">Somar</button>
+    <button id="subtrai">Subtrair</button>
+    <p>O resultado é:</p>
+    <p id="resultado"></p>
+    
    
    <script>
      var valora=0
@@ -130,9 +138,14 @@
        function salvar9b() {
            valorb=9
        }
-       document.getElementById("calcula").addEventListener('click', calcular)
-       function calcular() {
-        document.getElementById("soma").innerText=valora+valorb
+       document.getElementById("soma").addEventListener('click', somar)
+       function somar() {
+        document.getElementById("resultado").innerText=valora+valorb
+       }
+
+       document.getElementById("subtrai").addEventListener('click', subtrair)
+       function subtrair() {
+        document.getElementById("resultado").innerText=valora-valorb
        }
     </script>
     
